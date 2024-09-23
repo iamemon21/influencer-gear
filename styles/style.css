@@ -41,18 +41,21 @@ nav h1 {
     margin: 0 auto;
     /* border: 2px solid red; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .hero-content {
-    width: 50%;
+    max-width: 585px;
+    max-height: 270px;
     /* border: 2px solid green; */
+
 }
 
 .hero-img-container {
     /* border: 2px solid yellow; */
-    width: 50%;
+    max-width: 440px;
+    max-height: 414px;
     justify-content: center;
     display: flex;
 }
@@ -75,9 +78,12 @@ nav h1 {
     font-size: 1rem;
     font-weight: 600;
     color: rgba(58, 58, 58, 1);
+    margin: 0;
+    padding: 0;
 }
 
 .hero-btn {
+    margin-top: 15px;
     font-size: 1rem;
     font-weight: 700;
     color: white;
@@ -90,18 +96,28 @@ nav h1 {
 
 /* responsive  */
 @media screen and (max-width:576px) {
-    nav{
+    nav {
         flex-direction: column;
     }
 
     nav ul {
         flex-direction: column;
     }
-    .hero{
+
+    .hero {
         flex-direction: column-reverse;
+        max-width: 80%;
+        margin: 0 auto;
     }
-   .hero-img-container{
-    flex-direction: column;
-    width: 50%;
-   }
+
+    .hero-img-container {
+        flex-direction: column;
+     
+    }
+    .hero-img-container img {
+        max-width: 80%;
+    }
+    .hero-content{
+        text-align: center;
+    }
 }
