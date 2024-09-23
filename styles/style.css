@@ -115,7 +115,8 @@ nav h1 {
      
     }
     .hero-img-container img {
-        max-width: 80%;
+        max-width: 100%;
+
     }
     .hero-content{
         text-align: center;
