@@ -176,7 +176,40 @@ nav h1 {
     font-weight: bold;
     border: none;
 }
-
+/* Featured-products styles */
+.Featured-products{
+    max-width: 1110px;
+    height: 270px;
+    border: 2px solid red;
+    margin: 0 auto;
+    display: flex;
+}
+.features-text-container{
+    max-width: 610px;
+    max-height: 224px;
+    border: 2px solid green;
+    margin: 30px 0 30px 70px;
+}
+.Featured-title{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: rgba(10, 8, 38, 1);
+    margin: 5px ;
+    padding: 0;
+}
+.Featured-info{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(108, 108, 108, 1);
+    margin: 10px;
+    padding: 0;
+}
+.Featured-btn{
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    padding: 10px 24px ;
+    border: none;
+}
 /* responsive  */
 @media screen and (max-width:576px) {
     nav {
@@ -223,4 +256,8 @@ nav h1 {
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
     }
+    .Featured-products{
+        flex-direction: column-reverse;
+    }
+    
 }
